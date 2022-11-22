@@ -1,0 +1,133 @@
+**************************CSS Exercise**********************************************
+
+backgroung-repeat: no-repeat || repeat-x || repeat-yx
+
+background-position: top right
+
+background-attachment: fixed
+
+***border shorthand property***
+border: 4px dotted red; (border-width	border-style	border-color)
+
+***ROUNDED borders***
+border-radius: 5px
+
+margin-left: 20px	(margin-top	margin-right	margin-bottom	margin-left)
+margin: 20px 40px  (margin-top&margin-bottom	margin-left&margin-right)
+
+***margin property to center align***
+margin: auto
+
+***padding***
+padding-right: 20px	(margin-top	margin-right	margin-bottom	margin-left)
+padding: 100px padding-top&padding-bottom	padding-left&padding-right)
+
+***Set the height***
+height: 100px
+
+***Set the width***
+width: 200px
+
+***Set a solid, width outline border***
+outline-style: solid
+outline-width: 5px
+outline-color: red
+
+***outline border shorthand property***
+outline: 10px solid blue
+
+***uppercase letters || capitalized letters***
+text-transform: uppercase
+text-transfrom: capitalize
+
+***text indent to first line***
+text-indent: 20px
+
+***Set the font***
+font-family: Verdana;
+
+***Set the style to "italic" text***
+font-style: italic
+
+***Set the style to "bold" text***
+font-weight: bold
+
+***Font Variant (font- property to style the elements as "small-caps")***
+font-variant: small-caps
+
+***css link***
+/* unvisited link */
+a:link {text-decoration: none;}
+
+/* visited link */
+a:visited{text-decoration: none;}
+
+/* mouse over link */
+a:hover{text-decoration: underline;}
+
+***Set the list style for unordered lists to "square"***
+list-style-type: square || circle || upper-roman || lower-alpha 
+list-style-image: url("sqpurple.png")
+list-style: square inside url("sqpurple.png")
+
+***Collapse the table borders into a single border***
+border-collapse: collapse
+
+***Hide the element (hidden with space)***
+visibility: hidden
+
+***Hide the element (hidden without space)***
+display: none || inline || block
+
+***Position the element to always be 50px from the top, and 10px from the right, relative to the window/frame edges***
+position: fixed || static || relative || absolute || sticky
+top:50px
+right:10px
+
+***top of the page(z-index)***
+position: absolute || fixed
+top: 0
+z-index: 1
+
+***Force a scroll bar to the element***
+overflow: scroll
+
+***overflow (do specific height with scroll or auto or etc)***
+overflow: scroll || visible || hidden || auto
+
+***overflow with horizontal or vertical scrollbar***
+overflow-x: scroll || visible || hidden || auto
+
+***Center Align Elements***
+margin: auto
+
+***Center Align Elements with position to right***
+margin: auto
+position: absolute
+right: 0px
+
+***Combinators (Descendant Selector 'space')***
+div p{ color: red}
+
+***Combinators (child  Selector '>')***
+div > p{ color: red}
+
+***Combinators (adjacent sibling Selector '+')***
+div + p{ color: red}
+
+***Combinators (general sibling Selector '~')***
+div ~ p{ color: red}
+
+***Pseudo Classes (':')***
+a:hover || active || link || first-child || first-of-type || etc {background-color: red}
+
+
+
+
+
+
+
+
+
+
+

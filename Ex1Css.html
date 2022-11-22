@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exercise1 CSS</title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<style type="text/css">
+	h1, p{  
+			color:red;
+	}
+
+	body{	  
+		background-color:#888;
+		background-image: url("https://media.tenor.com/jHsiqrp5To8AAAAM/paper-plane.gif");
+		/*background-repeat: repeat-y;*/
+
+		background-repeat: no-repeat;
+		background-position: top right;
+		background-attachment: fixed;
+	}
+
+	h1{  
+		background-color: lightblue;
+	}
+
+
+	#p1{
+		border: 4px dotted red; /*border shorthand property*/
+		border-left-style: solid;
+	}
+
+	.p1{
+		border: 4px solid black;
+		border-radius: 5px;
+	}
+
+	h2{
+		margin-left: 20px;
+	}
+
+	.p2{
+		margin: 20px 40px;
+	}
+
+	.h1{
+		background-color: gray;
+		margin: auto;
+	}
+
+	.h2{
+		padding-top: 30px;
+		padding: 30px;
+	}
+
+	.h3{
+		margin: 25px;
+		height: 100px;
+		width: 50%;
+	}
+
+	.div1{
+		width: 200px;
+		border: 2px solid red;
+		padding: 25px;
+		margin-left: 25px;
+	}
+
+	.div2{
+		  outline-style: solid;
+		  outline-width: 5px;
+		  outline-color: red;
+
+		  outline: 10px solid blue;
+	}
+
+	.p3{
+	  text-align: center;
+	  text-transform: uppercase;
+	}
+
+	a{
+  	text-decoration: none;
+  	text-transform: capitalize;
+  	color: orange;
+	}
+
+	a:hover{
+	  color: blueviolet;
+	}
+
+	a:visited{
+		color: darkred;
+	}
+
+	.p4{
+		text-indent: 20px;
+		border: none;
+		font-family: Verdana;
+		font-style: italic;
+		font-size: 20px;
+		font-weight: bold;
+	}
+
+	.p5{
+		border: none;
+		font-variant: small-caps;
+	}
+
+	/* unvisited link */
+	a:link{text-decoration: none;}
+
+	/* visited link */
+	a:visited{text-decoration: none;}
+
+	/* mouse over link */
+	a:hover{text-decoration: underline;}
+
+	a:active{color: blue;}
+
+	ul {
+  	list-style-type: square;
+		list-style-image: url("sqpurple.png");
+		list-style: square inside url("sqpurple.png");
+	}
+	ol {
+  	list-style-type: upper-roman;
+	}
+
+
+	table, th, td{
+  	border: 2px solid black;
+  	border-collapse: collapse;
+	}
+
+	td{
+ 		text-align: right;
+	}
+
+	th{ 
+		padding: 15px;
+		background-color: lightblue;
+	}
+
+	.h4{
+		visibility: hidden;
+	}
+
+	.p6{
+		display: none;
+	}
+
+	.ul1 li{
+		display: inline;
+	}
+
+	.h5{
+	  position: fixed;
+	  top: 50px;
+	  right: 10px;
+	}
+
+	.p8{
+ 		background-color: yellow;
+ 		position: absolute;
+ 		top: 100px;
+ 		right: 10px;
+	}
+
+
+	#mytitle{
+		background-color: blue;
+	  position: absolute;
+	  top: 0;  
+		z-index: 1;  
+	}
+
+	#myintro{
+		background-color: blue;
+	  position: absolute;
+	  top: 5;  
+		z-index: 0;
+	}
+
+
+</style>
+<body style="background-color: green;">
+
+  <h1>This is a heading</h1>
+  <h2>This is a smaller heading</h2>
+  <p id="p1">This is a paragraph</p>
+  <p class="p1">This is a paragraph 1</p>
+  <p class="p2">This is a paragraph 2</p>
+  <h1 class="h1">This is a heading 1</h1>
+  <h1 class="h2">This is a heading 2</h1>
+  <h1 class="h3">This is a heading 3</h1>
+
+  <div class="div1">
+	Lorem ipsum dolor sit amet,consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  </div>
+	<br>
+  <div class="div2">
+	Lorem ipsum dolor sit amet,consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  </div>
+
+  <h1>This is a heading</h1>
+  <p class="p3">This is a paragraph</p>
+  <p class="p3">This is a paragraph</p>
+  <a href="http://w3schools.com" target="_blank">This is a link</a>
+
+  <p class="p4">
+  Lorem ipsum dolor sit amet,consectetur adipiscing elit,sed do eiusmod tempor incididuntut labore et dolore magna aliqua.
+	</p>
+
+	<p class="p5">
+  Lorem ipsum dolor sit amet,consectetur adipiscing elit,sed do eiusmod tempor incididuntut labore et dolore magna aliqua.
+	</p>
+
+	<ul>
+	  <li>Coffee</li>
+	  <li>Tea</li>
+	  <li>Coca Cola</li>
+	</ul>
+
+	<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Coca Cola</li>
+	</ol>
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+  </tr>
+</table>
+
+ <h1 class="h4">This is a heading</h1>
+ <p class="p6">This is a paragraph</p>
+ <p class="p7">This is a paragraph</p>
+
+ <ul class="ul1">
+  <li>Apple</li>
+  <li>Orange</li>
+  <li>Pear</li>
+</ul>
+
+ <h1 class="h5">This is a heading H5</h1>
+ <p class="p8">This is a paragraph P8</p>
+ <p class="p8">This is a paragraph P8</p>
+
+ <h1 id="mytitle">This is a heading</h1>
+ <p id="myintro">This is a paragraph</p>
+
+</body> 
+</html>

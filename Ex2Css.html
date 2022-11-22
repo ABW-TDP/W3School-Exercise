@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exercise2 CSS</title>
+</head>
+<style type="text/css">
+
+  .intro{
+		width: 200px;
+		height: 70px;
+		overflow:scroll;
+  	}
+
+  .intro1{
+		background-color: coral;
+		width: 200px;
+		height: 70px;
+		overflow: hidden;
+	}
+
+	.intro2{
+	  	width: 200px;
+	  	height: 70px;
+		overflow-x: scroll;
+		margin: auto;
+		border: 2px solid greenyellow;
+	}
+
+	.intro3{
+		width: 200px;
+		margin: auto;
+		position: absolute;
+		right: 0px;
+	}
+
+	div p{
+	  color: red;
+	}
+
+	div > p{
+	 	width: 200px;
+	  	background-color: greenyellow;
+	}
+
+	div + p{
+	  	color: blue;
+	}
+
+	div ~ p{
+	 	width: 200px;
+	  	background-color: #fab905;
+	}
+
+	a:hover{
+	  background-color: red;
+	}
+
+	.master:hover{
+	  background-color: red;
+	}
+
+	.p1{
+		display: none;
+	}
+
+	.master:hover .p1{
+		display: block;
+		background-color: greenyellow;
+		font-size: 30px;
+	}
+
+	.p2:first-child{
+	  background-color: red;
+	}
+
+	input:focus{
+	  background-color: gray;
+	}
+
+</style>
+
+</style>
+<body>
+
+<div class="intro">
+Lorem ipsum dolor sit amet,
+consectetur adipiscing elit.
+Phasellus imperdiet, nulla et dictum interdum,
+nisi lorem egestas odio,
+vitae scelerisque enim ligula venenatis dolor.
+</div>
+<br>
+<div class="intro1">
+Lorem ipsum dolor sit amet,
+consectetur adipiscing elit.
+Phasellus imperdiet, nulla et dictum interdum,
+nisi lorem egestas odio,
+vitae scelerisque enim ligula venenatis dolor.
+</div>
+<br>
+<div class="intro2">
+Lorem ipsum dolor sit amet,
+consectetur adipiscing elit.
+Phasellus imperdiet, nulla et dictum interdum,
+nisi lorem egestas odio,
+vitae scelerisque enim ligula venenatis dolor.
+</div>
+<br>
+<div class="intro3">
+Lorem ipsum dolor sit amet,
+consectetur adipiscing elit.
+Phasellus imperdiet, nulla et dictum interdum,
+nisi lorem egestas odio,
+vitae scelerisque enim ligula venenatis dolor.
+</div>
+
+<div>
+  <p>This is a paragraph 1.</p>
+  <p>This is a paragraph 2.</p>
+</div>
+<p>This is a paragraph 3.</p>
+<p>This is a paragraph 4.</p>
+
+<h1>This is a header.</h1>
+<p>This is a paragraph.</p>
+<a href="https://w3schools.com">This is a link.</a>
+
+<h1 class="master">This is a header.</h1>
+<h1 class="master">This is a header.<p class="p1">This is P1<p></h1>
+<p class="master">This is a paragraph.</p>
+<p>This is a paragraph.</p>
+
+<p class="p2">This is a paragraph.
+	<p>First child</p>
+	<p>Last Child</p>
+</p>
+<p>This is a paragraph.</p>
+
+<form>
+  Name:
+  <input type="text" name="fname">
+  Age:
+  <input type="text" name="age">
+</form>
+
+
+</body>
+</html>

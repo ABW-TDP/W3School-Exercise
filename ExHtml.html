@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exercise HTML</title>
+</head>
+	<style type="text/css"> 
+
+	.mystyle {
+		color:red;
+	}
+
+	.intro {
+		background:pink;
+	}
+
+	.special{
+		color:red;
+	}
+
+	#myheader{
+		color:red;
+	}
+
+	#special
+	{
+		color:blue;
+	}
+
+
+	</style>
+<body>
+
+	<p style="font-family:courier;">This is a paragraph.</p>
+
+	<p>WWF's mission is to stop the <strong>degradation</strong> of our planet's natural environment.</p>
+	<h1>Tokyo</h1>
+	<p>Tokyo is the capital of Japan, the most populous <em>metropolitan</em> area in the world.</p>
+
+	<p>HTML is <mark>FUN</mark> to learn!</p>
+
+	<p>H<sub>2</sub>O is the scientific term for water.</p>
+
+	<p>My favorite color is <del>blue</del> red.
+
+	<p>I am so <q>cool</q>.</p></p> <!-- result "cool" -->
+
+	<ol type="A">
+	  <li>Coffee</li>
+	  <li>Tea</li>
+	  <li>Milk</li>
+	</ol>
+
+	<dl>
+	<dt>Coffee</dt>  
+		<dd>- black hot drink</dd>
+	<dt>Milk</dt>  
+		<dd>- white cold drink</dd>
+	</dl>
+
+	<h1 class="mystyle">My Home Page</h1>
+
+	<h1 class="intro special">My Home Page</h1>
+
+	<h1 id="myheader">My Home Page</h1>
+
+	<p id="special">My paragraph</p>
+
+	<iframe src="https://www.w3schools.com" width="500" style="border:none;"></iframe>
+
+	<p id="demo">Hi.</p>
+
+	<pre><code>var person = {firstName:"John", lastName:"Doe"}</code></pre>
+
+	<p>Code example: <code>var person;</code></p>
+
+	<p>A simple math equation: <var>x</var> = 3 + 2; </p>
+
+	<form action="" method="POST">
+		<input type="button" value="OK">
+		<input type="radio" name="fav_language" value="html"> HTML
+		<input type="radio" name="fav_language"value="css"> CSS
+		Name: <input type="text" name="name">		
+		<input type="submit">
+		<select name="cars">
+			<option value="Volvo">Volvo</option>
+			<option value="Ford">Ford</option>
+		</select>
+		<textarea name="note"></textarea>
+		<input type="text" name="username" placeholder="Your name here" maxlength="40" disabled readonly> 
+
+		<input type="submit" value="Submit Form">
+
+		Favorite color:Blue<input value="blue" name="color"type="radio">
+ 		Red<input value="red" name="color" type="radio">
+  		<input type="submit">
+
+  		<button>Click Me</button>
+
+  		<input type="number" min="1" max="5">
+	</form>
+
+	<script type="text/javascript">
+		document.getElementById("demo").innerHTML = "Hello World!";
+
+		document.getElementById("demo").style.fontsize = "40px";
+
+		document.getElementById("demo").style.color = "red";
+
+	</script>
+
+</body>
+</html>
