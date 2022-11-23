@@ -50,7 +50,7 @@
 
 	div ~ p{
 	 	width: 200px;
-	  	background-color: #fab905;
+	  background-color: #fab905;
 	}
 
 	a:hover{
@@ -77,6 +77,24 @@
 
 	input:focus{
 	  background-color: gray;
+	}
+
+
+	p.intro:first-line{
+	  background-color: red;
+	}
+
+
+	.intro::first-letter{
+	  background-color: darkblue;
+	}
+
+	.div1 > p::before {
+		content: url('smiley.gif');
+	}
+
+	.div1 > p::after {  
+		content: url('smiley.gif');
 	}
 
 </style>
@@ -145,6 +163,19 @@ vitae scelerisque enim ligula venenatis dolor.
   <input type="text" name="age">
 </form>
 
+<p class="intro">
+In my younger and more vulnerable years
+my father gave me some advice that I've
+been turning over in my mind ever since.
+'Whenever you feel like criticizing anyone,' he told me,
+'just remember that all the people in this world
+haven't had the advantages that you've had.'
+</p>
+
+<div class="div1">
+<p>This is a paragraph.</p>
+<p>This is a paragraph.</p>
+</div>
 
 </body>
 </html>

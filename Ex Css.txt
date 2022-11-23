@@ -121,7 +121,10 @@ div ~ p{ color: red}
 ***Pseudo Classes (':')***
 a:hover || active || link || first-child || first-of-type || etc {background-color: red}
 
-
+***Pseudo Element ('::')***
+p::first-line || first-letter || before || after || selection || marker {color: red; font-size: 30px;}
+::selection{background-color:yellow; color: red;} //For all content 
+p::before { content: url('smiley.gif');}
 
 
 
