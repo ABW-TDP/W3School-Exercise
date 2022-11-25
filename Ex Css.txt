@@ -126,6 +126,31 @@ p::first-line || first-letter || before || after || selection || marker {color: 
 ::selection{background-color:yellow; color: red;} //For all content 
 p::before { content: url('smiley.gif');}
 
+***opacity***
+opacity: 50% || 0.4
+
+***Attribute selector***
+a["target"] || a["target="_blank"]{background: red}
+contains "te" [class*="te"] 
+starts with "top" [class^="top"] 
+ends with "test" [class$="test"]
+[title~="flower"] || [class|="top"] || input[type="text"] {background: red}
+
+***Rounded corners***
+border-radius || border-top-right-radius || border-bottom-left-radius :10px
+
+***Border image***
+border-image: source slice width outset repeat|initial|inherit;
+border:10px solid transparent
+border-image: url(border.png) 30 round
+
+***Multiple Backgrounds***
+background-image: url("img1.jpg"), url("img2.jpg");
+background-repeat: no-repeat, no-repeat;
+background-position: left top, right top;
+background-origin: content-box;
+background-clip: content-box;
+background: url("img1.jpg") right top no-repeat, url("img2.jpg") left top auto;
 
 
 

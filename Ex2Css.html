@@ -97,6 +97,75 @@
 		content: url('smiley.gif');
 	}
 
+	#img{ 
+		opacity: 0.4;
+	}
+
+	#img:hover{
+  	opacity: 1.0;
+	}
+
+	a[target]{
+	  background-color: red;
+	}
+
+	a[target="_blank"]{
+	  background-color: green;
+	}
+
+	img[title*="blue"]{
+
+  	border: 5px solid red;
+	}
+
+	img[title^="blue"]{
+  	border: 5px solid green;
+	}
+
+	img[title$="flower"]{
+  	border: 5px solid purple;
+	}
+
+	img[title*="flower"]{
+  	border: 5px solid blue;
+	}
+
+	.div2{
+		background: red;
+		text-align: justify-all;
+		padding: 20px;
+/*		border-radius: 10px;*/
+		border-bottom-left-radius: 10px;
+	}
+
+	.div3{
+		text-align: center;
+  	border: 10px solid transparent;
+		border-image: url(border1.png) 30 round;
+	}
+
+	.div4{
+		text-align: center;
+		border: 10px solid transparent;
+  	border-image-source: url(border1.png);
+  	border-image-repeat: stretch;  
+  	border-image-slice: 30;
+	}
+
+	body{
+/*		background: url("img1.jpg") right bottom no-repeat,url("img2.jpg") left top repeat;*/
+		background-image: url('img1.jpg'),url('img2.jpg');		
+		background-size: 130px, auto;
+		background-position: top left,top right;
+		background-repeat: no-repeat, repeat;
+		background-origin: content-box;
+		background-clip: content-box;
+/*	background-image: url('img1.jpg');*/
+/*	background-size: 100px 80px;*/ /*width height*/
+/*  background-repeat: no-repeat, no repeat; */
+
+	}
+
 </style>
 
 </style>
@@ -175,6 +244,31 @@ haven't had the advantages that you've had.'
 <div class="div1">
 <p>This is a paragraph.</p>
 <p>This is a paragraph.</p>
+</div>
+
+<img id="img" src="clematis.png" width="50" height="50">
+<hr>
+<a href="https://w3schools.com" style="text-decoration: none;">w3schools.com</a>
+<a href="http://disney.com" target="_blank" style="text-decoration: none;">Disney.com</a>
+<a href="http://wikipedia.org" target="_top" style="text-decoration: none;">wikipedia.org</a>
+
+<hr>
+
+<img src="clematis.png" title="blue flower">
+<img src="clematis2.png" title="purple flowers">
+<img src="clematis3.png" title="two blue flowers">  
+<hr>
+
+<div class="div2">This is a div element. It has some text.</div>
+
+<div class="div3">This is a div element. It has some text.</div>
+
+<div class="div4">This is a div element. It has some text.</div>
+
+<div class="div3">
+	<h1>This is a heading</h1>
+  <p>This is a paragraph</p>
+  <p>This is a paragraph</p>
 </div>
 
 </body>
