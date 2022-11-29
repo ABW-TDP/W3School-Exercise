@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exercise3 CSS</title>
+	<style type="text/css">
+		
+		.div1{
+  			background-image: linear-gradient(white, green);			
+  		}
+
+  		.div2{
+  			background-image: linear-gradient(to right, rgba(0,0,255,0.3), green);				
+  		}
+
+  		.div3{
+  			background-image: linear-gradient(to bottom right, hsla(0,100%,50%,0.5), green);				
+  		}
+
+  		.div4{
+  			background-image: linear-gradient(70deg, white, hsl(210,100%,50%));				
+  		}
+
+  		.div5{
+  			background-image: radial-gradient(white, rgb(255,0,0));				
+  		}
+
+  		.div6{
+  			background-image: radial-gradient(circle, rgba(0,255,0,0.9), hsl(300,100%,50%));				
+  		}
+
+  		.div7 h1{
+  			text-shadow: 2px 2px;
+  		}
+
+  		.div7 h1+p{
+  			font-family: cursive;
+  			font-size: 30px;
+  			text-shadow: 2px 2px 5px green;
+  		}
+
+  		.div7 p+p{
+  			font-family: fantasy;
+  			font-size: 30px;
+  			text-shadow: 2px 2px 5px green, 3px 3px 10px red;
+  		}
+
+  		.div8{
+  			border: 5px solid blue;
+  			box-shadow: 10px 10px 5px rgba(255,0,0,0.7), 0px 0px 20px orangered;
+  		}
+
+  		.p1{
+  			font-family: cursive;
+  			margin: auto;
+  			margin-top: 30px;
+  			white-space: nowrap; 
+		  	width: 200px; 
+		  	border: 1px solid #000000;
+		  	overflow: hidden;
+		  	text-overflow: ellipsis;
+  		}
+
+  		.p1:hover{
+  			font-family: monospace;
+  			font-style: italic;
+  			font-size: 20px;
+  			overflow: visible;
+  		}
+
+  		.p2{
+  			font-family: cursive;
+  			margin: auto;
+  			margin-top: 30px;
+  			white-space: nowrap; 
+		  	width: 150px; 
+		  	border: 1px solid #000000;
+		  	overflow: hidden;
+		  	word-wrap: break-word;
+  		}
+
+  		.p2:hover{
+		  	overflow: visible;
+  		}
+
+  		.p3{
+  			font-family: cursive;
+  			margin: auto;
+  			margin-top: 30px;
+  			width: 150px; 
+  			border: 1px solid #000000;
+  			word-break: break-all ; /*keep-all || break-word */
+  		}
+
+
+
+
+	</style>
+</head>
+<body>
+
+	<div class="div1" style="height:200px"></div>
+	<br>
+	<div class="div2" style="height:200px"></div>
+	<br>
+	<div class="div3" style="height:200px"></div>
+	<br>
+	<div class="div4" style="height:200px"></div>
+	<br>
+	<div class="div5" style="height:200px"></div>
+	<br>
+	<div class="div6" style="height:200px"></div>
+
+	<div class="div7">
+		<h1>This is a heading</h1>
+	  	<p>This is a paragraph</p>
+	  	<p>This is a paragraph</p>
+	</div>
+
+	<div class="div8">
+    <h1>This is a heading</h1>
+    <p>This is a paragraph</p>
+    <p>This is a paragraph</p>
+  </div>
+
+  <p class="p1">This paragraph contains a very long word: supercalifragilisticexpialidocious.</p>
+  <p class="p2">This paragraph contains a very long word: supercalifragilisticexpialidocious.</p>
+  <p class="p3">This paragraph contains a very long word: supercalifragilisticexpialidocious.</p>
+
+</body>
+</html>

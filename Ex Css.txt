@@ -152,10 +152,71 @@ background-origin: content-box;
 background-clip: content-box;
 background: url("img1.jpg") right top no-repeat, url("img2.jpg") left top auto;
 
+***Color***
+--rgba(red, green, blue, alpha)--
+background-color: rgba(255, 0, 0, 1.0)<-red color->|| rgba(0, 255, 0, 1.0)<-green->|| rgba(0, 0, 255, 1.0)<-blue->
 
+--hsl(hue, saturation, lightness)-- 
+->hue - 0 (or 360) is red || 120 is green || 240 is blue
+->Saturation is a percentage value: 100% is the full color.
+->Lightness is also a percentage; 0% is dark (black) and 100% is white.
+background-color: hsl(0,100%,50%)
 
+--hsla(hue, saturation, lightness, alpha)-- alpha is opacity 
+background-color: hsla(0, 100%, 30%, 0.3)
 
+---rgb---
+background-color: rgb(255, 0, 0)
+opacity:0.4
 
+***Linear Gradients <-linear-gradient(direction, color-stop1, color-stop2, ...)->***
+background-image: linear-gradient(red, yellow) <-Direction - top to bottom (this is default)->
+background-image: linear-gradient(to right, red , yellow) <- Direction - left to right->
+background-image: linear-gradient(to bottom right, red, yellow) <-Direction - top left to bottom right ->
+background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)) <- use transparency ->
+
+***Linear Gradients <-linear-gradient(angle, color-stop1, color-stop2)->***
+background-image: linear-gradient(180deg, red, yellow)
+
+***Repeating a linear-gradient***
+background-image: repeating-linear-gradient(red, yellow 10%, green 20%)
+
+***Radial Gradients <-radial-gradient(shape size at position, start-color, ..., last-color)->; like as circle***
+background-image: radial-gradient(red, yellow, green)
+background-image: radial-gradient(red 5%, yellow 15%, green 60%)
+background-image: radial-gradient(circle, red, yellow, green)
+background-image: repeating-radial-gradient(red, yellow 10%, green 15%)
+
+***Conic Gradients <- conic-gradient([from angle] [at position,] color [degree], color [degree] ->***
+background-image: conic-gradient(red, yellow, green)
+background-image: conic-gradient(red 45deg, yellow 90deg, green 210deg)
+
+background-image: conic-gradient(red, yellow, green, blue, black);
+border-radius: 50%;
+
+background-image: conic-gradient(at 60% 45%, red, yellow, green)
+background-image: conic-gradient(from 90deg, red, yellow, green)
+background-image: repeating-conic-gradient(red 10%, yellow 20%)
+
+***Shadow Effects (text-shadow & box-shadow)***
+text-shadow: 2px 2px <-horizontal vertical shadow-> || 2px 2px red || 2px 2px 5px red <-5px is blur effect->
+text-shadow: -1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; <-Multiple Shadows->
+
+box-shadow: 10px 10px || 10px 10px lightblue || 10px 10px 5px lightblue
+box-shadow: 10px 10px 5px 12px lightblue <- 12px is spread radius>
+---inset parameter changes the shadow from an outer shadow (outset) to an inner shadow---
+box-shadow: 10px 10px 5px lightblue inset
+box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green;<-Multiple Shadows->
+
+***Text Effects (text-overflow, word-wrap, word-break, writing-mode)***
+white-space: nowrap
+width: 200px
+border: 1px solid #000000
+overflow: hidden || visible
+text-overflow: clip || ellipsis
+word-wrap: break-word || keep-all || break-all 
+writing-mode: horizontal-tb <-default->||vertical-rl 
+word-break : break-all <-can break between any two letters>
 
 
 

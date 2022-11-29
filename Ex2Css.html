@@ -41,7 +41,7 @@
 
 	div > p{
 	 	width: 200px;
-	  	background-color: greenyellow;
+	  background-color: greenyellow;
 	}
 
 	div + p{
@@ -166,6 +166,23 @@
 
 	}
 
+	.div5 p{
+		background-color: transparent;
+	}
+
+	.div5 h1{
+		 background-color: rgba(0, 0, 255, 1.0);
+		 background-color: hsl(0, 100%, 50%); /*hsl(360, 100%, 50%);*/
+		 background-color: hsl(240, 100%, 50%, 0.5); /*hsl(360, 100%, 50%);*/
+
+	}
+
+	.div5 h1 + p {
+		color: black;
+  	background-color: rgb(255, 0, 0);
+  	opacity: 0.3;
+	}
+
 </style>
 
 </style>
@@ -265,11 +282,12 @@ haven't had the advantages that you've had.'
 
 <div class="div4">This is a div element. It has some text.</div>
 
-<div class="div3">
-	<h1>This is a heading</h1>
+<div class="div5">
+ 	<h1>This is a heading</h1>
   <p>This is a paragraph</p>
   <p>This is a paragraph</p>
 </div>
+
 
 </body>
 </html>
