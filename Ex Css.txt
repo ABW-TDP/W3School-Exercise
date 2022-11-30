@@ -218,5 +218,23 @@ word-wrap: break-word || keep-all || break-all
 writing-mode: horizontal-tb <-default->||vertical-rl 
 word-break : break-all <-can break between any two letters>
 
+***2D Transform***
+-translate(X-axis,Y-axis), rotate(deg), scaleX(width), scaleY(height), scale(width,height), 
+-skewX(deg), skewY(deg), skew(X-axis deg,Y-axis deg), matrix(scaleX(), skewY(), skewX(), scaleY(), 
+-translateX(), translateY())
+transform: translate(100px, 200px) || rotate(45deg) || scale(0.5,2) || skew(20deg, 30deg)
+
+***3D Transforms***
+transform: rotateX(150deg) || rotateY(120deg) || rotateZ(90deg)
+
+***Transitions (transition,transition-delay,transition-duration,transition-property,transition-timing-function)***
+transition: width 2s
+transition-timing-function: ease-in-out
+transition-delay: 0.5s
+transition: background 2s, transform 2s;
+transition: width 2s ease-in-out 0.5s; <-shorthand->
+
+
+
 
 

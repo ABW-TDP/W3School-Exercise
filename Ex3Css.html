@@ -93,8 +93,124 @@
   			word-break: break-all ; /*keep-all || break-word */
   		}
 
+  		.div9{
+  			width: 100px;
+		  	height: 100px;
+		  	margin: auto;
+		  	background-color: lightblue;
+		 	border: 1px solid black;
+		  	transform: translate(100px, 200px);
+  		}
 
+  		.div10{
+  			width: 100px;
+  			height: 100px;
+  			margin: 20px;
+  			background-color: red;
+  			border: 1px solid black;
+  			transform: rotate(45deg);
+  		}
 
+  		.div11{
+  			width: 100px;
+		  	height: 100px;
+		  	margin: 50px;
+		  	background-color: yellow;
+		  	border: 1px solid black;
+		 	transform: scale(0.5,2);
+  		}
+
+  		.div12{
+  			width: 100px;
+		  	height: 100px;
+		  	margin: 50px;
+		  	background-color: blue;
+		  	border: 1px solid black;
+		  	transform: skew(20deg,30deg);
+ 		}
+
+ 		#mydiv1{
+ 			width: 100px;
+			height: 100px;
+			background-color: lightblue;
+			border: 1px solid black;
+			transform: rotateX(150deg);
+ 		}
+
+ 		#mydiv2{
+ 			width: 100px;
+			height: 100px;
+			background-color: red;
+			border: 1px solid black;
+			transform: rotateY(120deg);
+ 		}
+
+ 		#mydiv3{
+ 			width: 100px;
+			height: 100px;
+			background-color: greenyellow;
+			border: 1px solid black;
+			transform: rotateZ(90deg);
+ 		}
+
+ 		#mydiv4{
+ 			width: 100px;
+		  	height: 100px;
+		  	background: red;  
+		  	transition: width 2s;
+ 		}
+
+ 		#mydiv4:hover {
+  			width: 300px;
+		}
+
+		#mydiv5{
+ 			width: 100px;
+		  	height: 100px;
+		  	background: rgba(255, 0, 255, 1);  
+		  	transition: width 2s;
+		  	transition-timing-function: ease-in-out;
+ 		}
+
+ 		#mydiv5:hover {
+  			width: 300px;
+		}
+
+		#mydiv6{
+ 			width: 100px;
+		  	height: 100px;
+		  	background: hsl(90, 50%, 50%);  
+		  	transition: width 2s;
+		  	transition-delay: 0.5s;
+ 		}
+
+ 		#mydiv6:hover {
+  			width: 300px;
+		}
+
+		#mydiv7{
+		  	width: 100px;
+		  	height: 100px;
+		  	background: hsl(160, 50%, 50%);
+		  	transition: background 2s, transform 2s;
+		}
+
+		#mydiv7:hover {
+  			background: hsla(160, 50%, 50%,0.5);
+  			transform: rotate(180deg);
+		}
+
+		#mydiv8{
+		  	width: 100px;
+		  	height: 100px;
+		  	background: conic-gradient(red, yellow, green);
+		  	transition: width 2s ease-in-out 0.5s;
+		}
+
+		#mydiv8:hover {
+		  	width: 400px;
+		  	background:radial-gradient(red, yellow, green);
+		}
 
 	</style>
 </head>
@@ -127,6 +243,21 @@
   <p class="p1">This paragraph contains a very long word: supercalifragilisticexpialidocious.</p>
   <p class="p2">This paragraph contains a very long word: supercalifragilisticexpialidocious.</p>
   <p class="p3">This paragraph contains a very long word: supercalifragilisticexpialidocious.</p>
+
+  <div class="div9">This is a div</div>
+  <div class="div10">This is a div</div>
+  <div class="div11">This is a div</div>
+  <div class="div12">This is a div</div>
+
+  <div id="mydiv1">This is my div1</div>
+  <div id="mydiv2">This is my div2</div>
+  <div id="mydiv3">This is my div3</div>
+
+  <div id="mydiv4">This is my div4</div>
+  <div id="mydiv5">This is my div5</div>
+  <div id="mydiv6">This is my div6</div>
+  <div id="mydiv7">This is my div7</div>
+  <div id="mydiv8">This is my div8</div>
 
 </body>
 </html>
