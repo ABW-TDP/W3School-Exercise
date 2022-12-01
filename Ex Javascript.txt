@@ -1,0 +1,58 @@
+***Data Type***
+-var (can overwrite value)
+-let (can overwrite value)
+-const (can't overwrite value)
+
+***Globle Scope (Difference between var and let)***
+{
+  let x = 2;
+}
+// x can NOT be used external
+{
+  var x = 2;
+}
+// x CAN be used external
+
+***Operator***
+** - Exponentiation (power) Eg. 2 power 5 = 32 <--same as Math.pow(2,5)-->
+
+
+***JavaScript is Case Sensitive စာလုံးအကြီးသေးကစ var 2မျိုးလို့သတ်မှတ်***
+let lastname, lastName;
+lastName = "Doe";
+lastname = "Peterson";
+
+result ထုတ်တဲ့ခါ 
+console.log(lastName); result is "Doe"
+
+***3 Result Print (textContent || innerText || innerHTML)***
+
+document.getElementById('idname').textContent = "Welcome to Javascript";
+document.getElementById('idname').innerText = "Welcome to Javascript";
+document.getElementById('idname').innerHTML = "Welcome to Javascript";
+
+***DataType Result***
+console.log(typeof lastName);
+document.getElementById("demo").innerHTML = typeof "" + "<br>"
+
+***Concatinate String Result***
+let a = "case sensitive";
+document.write("Javascript"+"is"+ a +"!");
+document.write(`Javascript is ${a}!`);
+window.alert(a);
+
+***Javascript Function***
+
+let x = myFunction(4, 3);   // Function is called, return value will end up in x
+document.write(x);
+
+function myFunction(a, b) {
+  return a * b;             
+}
+
+***Javascript Object***
+const car = {type:"Fiat", model:"500", color:"white"};
+document.write(car.type);
+document.write(car["type"]);
+
+

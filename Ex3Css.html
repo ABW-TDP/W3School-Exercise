@@ -212,6 +212,108 @@
 		  	background:radial-gradient(red, yellow, green);
 		}
 
+		@keyframes example{
+		  from{
+		  	background-color: red;
+		 	}
+		  to{
+			background-color: blue;
+			}
+		}
+
+		.d1{			
+			width: 100px;
+  			height: 100px;
+  			background-color: red;
+  			animation-name: example;
+			animation-duration: 5s;
+		}
+
+		@keyframes example1{
+			0%  {left:0px; top:0px;}
+			25% {left:0px; top:200px;}
+			50% {left:200px; top:200px;}
+			75% {left:200px; top:0px;}
+			100% {left:0px; top:0px;}
+			}
+
+		.d2{
+		  	width: 100px;
+		  	height: 100px;
+		  	position: relative;
+		  	background-color: red;
+		  	animation-name: example1;
+		  	animation-duration: 10s;
+		}
+
+		@keyframes example2{
+		  0%   {background-color: red; left:0px;}
+		  50%  {background-color: yellow; left:200px;}
+		  100% {background-color: red; left:0px;}
+		}
+
+		.d3{
+		  width: 100px;
+		  height: 100px;
+		  position: relative;
+		  background-color: red;
+		  animation-name: example2;
+		  animation-duration: 15s;
+		  animation-delay: 1s;
+		}
+
+		@keyframes example3{
+		  0%   {background-color: red; left:0px;}
+		  50%  {background-color: yellow; left:200px;}
+		  100% {background-color: red; left:0px;}
+		}
+
+		.d4{
+		  width: 100px;
+		  height: 100px;
+		  position: relative;
+		  background-color: red;
+		  animation-name: example3;
+		  animation-duration: 2s;
+		  animation-iteration-count: infinite;
+		}
+
+		@keyframes example4{
+		  0%   {background-color: red; left:0px; top:0px;}
+		  25%  {background-color: blue; left:0px; top:200px;}
+		  50%  {background-color: green; left:200px; top:200px;}
+		  75%  {background-color: yellow; left:200px; top:0px;}
+		  100% {background-color: red; left:0px; top:0px;}
+		}
+
+		.d5{
+		  width: 100px;
+		  height: 100px;
+		  position: relative;
+		  background-color: red;
+		  animation-name: example4;
+		  animation-duration: 4s;
+		  animation-iteration-count: infinite;
+		  animation-direction: alternate;   
+		}
+
+		@keyframes example5{
+		  0%   {background-color: red; left:0px;}
+		  50%  {background-color: yellow; left:200px;}
+		  100% {background-color: red; left:0px;}
+		}
+
+		.d6{
+		  width: 100px;
+		  height: 100px;
+		  position: relative;
+		  background-color: red;
+		  animation-name: example5;
+		  animation-duration: 20s;  
+		  animation-timing-function: ease-in-out;
+		}
+
+
 	</style>
 </head>
 <body>
@@ -258,6 +360,14 @@
   <div id="mydiv6">This is my div6</div>
   <div id="mydiv7">This is my div7</div>
   <div id="mydiv8">This is my div8</div>
+  <br><hr>
+	
+  <div class="d1">This is a d1</div><br>
+  <div class="d2">This is a d2</div><br>
+  <div class="d3">This is a d3</div><br>
+  <div class="d4">This is a d4</div><br>
+  <div class="d5">This is a d5</div><br>
+  <div class="d6">This is a d6</div><br>
 
 </body>
 </html>

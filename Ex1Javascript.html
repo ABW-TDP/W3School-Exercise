@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Javascript Exercise1</title>
+</head>
+<body>
+
+	<p id="demo"></p>
+	<p id="test"></p>
+
+	<script>
+		var x = 5;
+		var y = 10;
+		document.getElementById("demo").innerHTML = x +y;
+		// console.log(x +y);
+		var x = 5;
+		var y = 10;
+		var z= x + y;
+		// alert(x**y);
+		// alert(Math.pow(x,y)); 
+
+		let length = 16; // Number
+
+		let lastName = "Johnson"; // String
+
+		const a = {
+		  firstName: "John",
+		  lastName: "Doe"
+		}; // Object
+
+		console.log(typeof length);
+		console.log(typeof lastName);
+		console.log(typeof a);
+
+	function myFunction() {
+  		alert("Hello World!");
+	}
+
+	let fun = myFunction();
+
+	function myFunction1() {
+		return "Hello";
+	}
+	document.getElementById("test").innerHTML = myFunction1();
+
+	const person = {
+	  firstName: "John",
+	  lastName: "Doe"
+	};
+	alert(person.firstName);
+
+	</script>
+
+</body>
+</html>
