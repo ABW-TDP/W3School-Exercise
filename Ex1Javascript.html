@@ -9,7 +9,7 @@
 
 	<p id="demo"></p>
 	<p id="test"></p>
-
+	<p id="p1"></p>
 	<script>
 		var x = 5;
 		var y = 10;
@@ -35,7 +35,8 @@
 		console.log(typeof a);
 
 	function myFunction() {
-  		alert("Hello World!");
+  		// alert("Hello World!");
+  		document.write("<br>"+ "Hello World!");
 	}
 
 	let fun = myFunction();
@@ -49,9 +50,72 @@
 	  firstName: "John",
 	  lastName: "Doe"
 	};
-	alert(person.firstName);
+	// alert(person.firstName);
+	document.write("<br>"+ person.firstName);
+
+	const person1 = {
+	  name:"John", 
+	  age:50
+	};
+	// alert(person1.name+ " is " + person1.age);
+	document.write("<br>"+ person1.name+ " is " + person1.age);
+
+	let txt = "Hello World!";
+	let x1 = txt.length;
+	document.write("<br>"+ x1);
+	// alert(x);
+
+	let txt1 = "We are \"Vikings\""; // SpecialCharacter \"
+	// alert(txt);
+	document.write("<br>"+ txt1);
+
+	// ***upppercase***
+	let tt = "Hello Javascript!";
+	tt1 = tt.toUpperCase(); //tt.toLowerCase()
+	document.write("<br>"+ tt1);
+
+	// ***slice***
+	let t1 = "I can eat bananas all day";
+	let r = t1.slice(10, 17); //slice(start index, end index)
+	document.write("<br>"+ r);
+
+	// ***replace***
+	let t2 = "Hello World";
+	t3 = t2.replace("Hello", "Welcome");
+	document.write("<br>"+ t3);
+
+	// ***Array***
+	const cars = ["Saab", "Volvo", "BMW"];
+	let xx = cars[1];
+	document.write("<br>" + xx);
+
+	cars[0]= "Ford";
+	document.write("<br>" + cars[0]);
+
+	alert(cars.length);
+
+	// ***pop***
+	const fruits = ["Banana", "Orange", "Apple"];fruits.pop();
+	document.getElementById("p1").innerHTML = fruits;
+
+	// ***push***
+	document.getElementById("p1").innerHTML = fruits.push("Kiwi");
+
+	// ***splice***
+	document.getElementById("p1").innerHTML = fruits.splice(1,2);
+
+	// ***sort***
+	document.getElementById("p1").innerHTML = fruits.sort();
+
 
 	</script>
+
+	<button style="display:block; margin: 5px;" onclick="alert('Hello')">Click me.</button>
+	<button style="display:block; margin: 5px;" onclick="myFunction()">Click me.</button>
+
+	<div onmouseover="this.style.backgroundColor='red'" onmouseleave="this.style.backgroundColor='transparent'">myDIV.</div>
+
+
 
 </body>
 </html>

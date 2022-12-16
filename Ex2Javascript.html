@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exercise 2 Javascript</title>
+</head>
+<body>
+
+	<p id="demo"></p>
+	<p id="p1"></p>
+	<p id="p2"></p>
+	<p id="p3"></p>
+	<p id="p4"></p>
+	<p id="p5"></p>
+	<p id="p6"></p>
+	<p id="p7"></p>
+	<p id="p8"></p>
+	<p id="p9"></p>
+	<p id="p10"></p><hr>
+	<p class="test"></p>
+	<p class="test"></p>
+	<img id="image" src="smiley.gif"><br>
+	<input type="text" id="myText" value="Hello"><br>
+	<p id="demo1">Javascript DOM Hidden</p><br>
+	<button id="demo2">Click</button><br>
+	<hr>
+<script type="text/javascript">
+
+	// ***Date***
+
+	// const d = new Date();
+	// alert(d);
+
+	const d = new Date();
+	const year = d.getFullYear();
+	document.getElementById("p1").innerHTML = year;
+
+	const month = d.getMonth();
+	document.getElementById("p2").innerHTML = month;
+
+	const yr = d.setFullYear(2022);
+	document.getElementById("p3").innerHTML = yr;
+
+	// ***Math***
+	let r = Math.random();
+	document.getElementById("p4").innerHTML = r;
+
+	let m = Math.max(10, 20);
+	document.getElementById("p5").innerHTML = m;
+
+	let rd = Math.round(5.3);
+	document.getElementById("p6").innerHTML = rd;
+
+	let s = Math.sqrt(9);
+	document.getElementById("p7").innerHTML = s;
+
+	// ***Boolean***
+	let x = -0;
+	document.write("<br>"+Boolean(x));
+
+	// ***Comparison***
+	x = 10;
+	y = 5;
+	console.log(x>y);
+	// alert(x > y);
+
+	x1 = 10;
+	y1 = 10;
+	console.log(x1 == y1);
+
+	console.log(x != y);
+
+	// ***Ternary operator***
+	var age = 10;
+	var voteable = (age < 18) ? "Too young" : "Old enough";
+	document.write(`<br> ${voteable}`);
+
+	// ***Condistion***
+	if (x > y){
+		document.write(`<br>Hello World`);
+	}else{
+		document.write(`<br>Goodbye`);
+	}
+
+	// ***Switch***
+	const fruits = "Banana";
+	switch(fruits) { 
+	case"Banana":
+	    document.write("<br>Hello")
+	    break;	  
+	case"Apple":
+	    document.write("<br>Welcome")
+	    break; 
+	default:
+		document.write("<br>Neither");
+	}
+
+	let i;
+	for(i= 0; i< 10; i++) {
+	  console.log(i);
+	}
+
+	const fruits1 = ["Apple", "Banana", "Orange"];
+	for (x1 of fruits1) {
+	  console.log(x1);
+	}
+
+	let ii = 0;
+	while
+	 (ii<10) {
+	  console.log(ii);
+	  ii++
+	}
+
+
+	let iii = 0;
+	while (i < 10) {
+	  console.log(iii);
+	  iii= iii+ 2;
+	}
+
+	for (iiii = 0; iiii < 10; iiii++) {
+	  console.log(iiii);
+	  if (iiii == 5) {
+	    break;
+	  }
+	}
+
+	for (iiiii = 0; iiiii < 10; iiiii++) {
+	  if (iiiii == 5) {
+	    continue;
+	  }
+	  console.log(iiiii);
+	}
+
+	// ***Javascript DOM***
+
+	document.getElementById("demo").innerHTML= "Hello"; //getElementById
+
+	document.getElementsByTagName("p")[0].innerHTML= "Hello Javascript"; //getElementsByTagName
+
+	document.getElementsByClassName("test")[0].innerHTML = "Hello DOM"; //getElementsByClassName
+
+	document.getElementById("image").src = "landscape.jpg"; //.src
+
+	document.getElementById("myText").value = "Have a nice day!"; //.value
+
+	document.getElementById("demo").style.color= "red"; //style.property
+
+	document.getElementById("demo").style.fontSize= "40px"; //style.property
+
+	document.getElementById("demo1").style.display = "none";
+
+	document.getElementById("demo2").addEventListener("click", function(){ alert("Hello World!");});
+				// (OR)
+	document.getElementById("demo2").addEventListener("click", myFunction);
+	function myFunction(){ 
+		alert("Hello End!");
+	}
+
+</script>
+</body>
+</html>

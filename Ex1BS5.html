@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exercise 1 Bootstrap 5</title>
+
+<!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> -->
+  	
+  	<link href="./css/bootstrap.min.css" rel="stylesheet">
+  	<script src="./js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<!-- <div class="container">
+  <h1>My First Bootstrap Page</h1>
+  <p>This part is inside a .container class.</p>
+  <p>The .container class provides a responsive fixed width container.</p>
+  <p>Resize the browser window to see that the container width will change at different breakpoints.</p>
+</div>
+
+<div class="container-fluid">
+  <h1>My First Bootstrap Page</h1>
+  <p>This is some text.</p>
+</div>
+
+<div class="container pt-5">
+	<p>This is some text.</p>
+</div>
+
+<div class="container p-5 my-5 bg-primary text-white">
+  <h1>My First Bootstrap Page</h1>
+  <p>This container has a dark background color and a white text, and some extra padding and margins.</p>
+</div> -->
+
+<div class="container">
+  <p>Hello World!</p>
+</div>
+
+<div class="container-fluid">
+  <p>Hello World!</p>
+</div>
+
+<p class="text-center">Hello World!</p>
+
+<h1 class="display-1">My Heading</h1>
+
+<p class="text-uppercase">Hello World!</p>
+
+<p class="text-warning">Hello World!</p>
+
+<p class="bg-light">Hello World!</p>
+
+<img src="paris.jpg" alt="Paris" class="rounded-circle"> 
+
+<img src="paris.jpg" alt="Paris" class="rounded"> 
+
+<img src="paris.jpg" alt="Paris" class="img-thumbnail"> 
+
+<img src="paris.jpg" alt="Paris" class="img-fluid"> 
+
+<hr>
+
+<table class="table">
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>john@example.com</td>
+  </tr>
+  <tr>
+    <td>Mary</td>
+    <td>Moe</td>
+    <td>mary@example.com</td>
+  </tr>
+  <tr>
+    <td>July</td>
+    <td>Dooley</td>
+    <td>july@example.com</td>
+  </tr>
+</table>
+
+<table class="table table-striped">
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>john@example.com</td>
+  </tr>
+  <tr>
+    <td>Mary</td>
+    <td>Moe</td>
+    <td>mary@example.com</td>
+  </tr>
+  <tr>
+    <td>July</td>
+    <td>Dooley</td>
+    <td>july@example.com</td>
+  </tr>
+</table>
+
+<table class="table table-bordered table-hover">
+ <tr class="table-success">
+    <td>John</td>
+    <td>Doe</td>
+    <td>john@example.com</td>
+  </tr>
+  <tr class="table-danger">
+    <td>Mary</td>
+    <td>Moe</td>
+    <td>mary@example.com</td>
+  </tr>
+  <tr class="table-primary">
+    <td>July</td>
+    <td>Dooley</td>
+    <td>july@example.com</td>
+  </tr>
+</table>
+
+<div class="alert alert-success">
+Success!
+</div>
+
+<div class="alert alert-success">
+  This alert box could indicate a successful or positive action.
+</div>
+<div class="alert alert-info">
+  This alert box could indicate a neutral informative change or action.
+</div>
+<div class="alert alert-warning">
+  This alert box could indicate a warning that might need attention.
+</div>
+<div class="alert alert-danger">
+  This alert box could indicate a dangerous or potentially negative action.
+</div>
+
+<div class="alert alert-success alert-dismissible">
+  <button class="btn-close" data-bs-dismiss="alert"></button>
+  Blah blah blah.
+</div>
+
+<button class="btn btn-danger">Danger</button>
+
+<button class="btn btn-primary btn-lg">Button</button>
+<button class="btn btn-primary btn-sm">Button</button>
+
+<button class="btn btn-primary btn-block">Button</button>
+
+<a href="#" class="btn btn-primary disabled">My link</a>
+
+<div class="container mt-3">
+  <h2>Button Outline</h2>
+  <button type="button" class="btn btn-outline-primary">Primary</button>
+  <button type="button" class="btn btn-outline-secondary">Secondary</button>
+  <button type="button" class="btn btn-outline-success">Success</button>
+  <button type="button" class="btn btn-outline-info">Info</button>
+  <button type="button" class="btn btn-outline-warning">Warning</button>
+  <button type="button" class="btn btn-outline-danger">Danger</button>
+  <button type="button" class="btn btn-outline-dark">Dark</button>
+  <button type="button" class="btn btn-outline-light text-dark">Light</button>
+</div>
+<br>
+
+<div class="btn-group btn-group-lg">
+  <button class="btn btn-primary">Apple</button>
+  <button class="btn btn-primary">Samsung</button>
+  <button class="btn btn-primary">Sony</button>
+</div>
+
+<div class="btn-group-vertical">
+  <button class="btn btn-primary">Apple</button>
+  <button class="btn btn-primary">Samsung</button>
+  <button class="btn btn-primary">Sony</button>
+</div>
+
+<Button type="button" class="btn btn-primary">New Comment 
+  <span class="badge bg-secondary">10</span>
+</button>
+<Button type="button" class="btn btn-warning">Noti
+  <span class="badge bg-success">5</span>
+</button>
+
+<span class="badge rounded-pill bg-secondary">New Comment</span>
+
+<div class="progress m-3">
+  <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:70%">
+    70%
+  </div>
+</div>
+
+<div class="spinner-border text-primary"></div>
+
+<div class="spinner-grow text-danger"></div>
+
+<button class="btn btn-primary" disabled>
+  <span class="spinner-border spinner-border-sm"></span>
+  Loading..
+</button>
+
+<ul class="pagination">
+ <li class="page-item active"><a class="page-link" href="#">1</a></li>
+  <li class="page-item"><a class="page-link" href="#">2</a></li>
+  <li class="page-item"><a class="page-link" href="#">3</a></li>
+</ul>
+
+<ul class="breadcrumb">
+  <li class="breadcrumb-item"><a href="#">Photos</a></li>
+  <li class="breadcrumb-item"><a href="#">Italy</a></li>
+  <li class="breadcrumb-item"><a href="#">Rome</a></li>
+</ul>
+
+<ul class="list-group">
+  <li class="list-group-item list-group-item-action list-group-item-success">First item</li>
+  <li class="list-group-item list-group-item-action">Second item</li>
+  <li class="list-group-item list-group-item-action">Third item</li>
+</ul>
+
+<ul class="list-group list-group-horizontal">
+  <li class="list-group-item list-group-item-action">First item</li>
+  <li class="list-group-item list-group-item-action">Second item</li>
+  <li class="list-group-item list-group-item-action">Third item</li>
+</ul>
+
+</body>
+</html>

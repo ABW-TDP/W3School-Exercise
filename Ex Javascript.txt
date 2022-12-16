@@ -55,4 +55,97 @@ const car = {type:"Fiat", model:"500", color:"white"};
 document.write(car.type);
 document.write(car["type"]);
 
+***Javascript Event***
+- onchange -> An HTML element has been changed
+- onclick -> The user clicks an HTML element
+- onmouseover -> The user moves the mouse over an HTML element
+- onmouseout -> The user moves the mouse away from an HTML element
+- onkeydown -> The user pushes a keyboard key
+- onload
+<element event='some JavaScript'>
+<button onclick= "alert('Hello')" || "myFunction()">
+<div onmouseover="this.style.backgroundColor='red'">
 
+***Escape Character (\' || \" || \\ ) ***
+"We are the so-called \"Vikings\" from the north."
+
+***String Method***
+
+length. slice(start, end), substring(start, end), substr(start, length), replace(), replaceAll(), toUpperCase(), toLowerCase(), concat(), trim(), trimStart(), trimEnd(), padStart(), padEnd(), charAt(), charCodeAt(), split()
+
+let text = "Please visit Microsoft!";
+let newText = text.replace(/MICROSOFT/i, "W3Schools");
+let newText = text.replace(/Microsoft/g, "W3Schools");
+
+***Array***
+const array_name = [item1, item2, ...];
+const array_name = new Array(item1, item2, ...); <-new Array()->
+const cars = []; cars[0]= "Saab";
+const person = {firstName:"John", lastName:"Doe", age:46}; <-Object Array->
+typeof fruits <-ဘာtypeလဲစစ်တာ->
+Array.isArray(fruits); <-Array.isArray(object) arrayဖြစ်လားစစ်တာ->
+fruits instanceof Array; <-instanceof arrayဖြစ်လားစစ်တာ->
+
+***Array Methods***
+-toString()
+-join() method also joins all array elements into a string
+-pop() method removes the last element from an array နောက်ဆုံးindex valueကိုဖြတ်ယူတာ
+-push() method adds a new element to an array (at the end) နောက်ဆုံးindex valueနောက်ကိုထပ်ပေါင်းထည့်တာ
+-shift() method removes the first array element and "shifts" all other elements to a lower index ရှေ့ဆုံးindex valueကိုဖြတ်ယူတာ
+-unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements ရှေ့ဆုံးindex valueနောက်ကိုထပ်ပေါင်းထည့်တာ
+-length <-eg: fruits[fruits.length] = "Kiwi" ->
+-delete <-eg: delete fruits[0] ->
+-concat() <eg: arr1.concat(arr2) || Merging Three Arrays arr1.concat(arr2, arr3)->
+-splice() method adds new items to an array (replace element by index number and remove element count)
+<- eg: fruits.splice(2, 0, "Lemon", "Kiwi") || fruits.splice(0, 1)->
+-slice() method slices out a piece of an array || slice() method does not remove any elements from the source array<-eg: fruits.slice(3) ->
+-sort() <- eg: arr1.sort()-> By ASC
+-reverse() <- eg: arr1.reverse() -> By DSC
+
+***Date(JavaScript counts months from 0 to 11)***
+-new Date(date string)
+-new Date(year, month, day, hr, min, sec, misec)
+-new Date(milliseconds)
+-toDateString() || toUTCString() || toISOString() || getFullYear() || getMonth() || etc.
+
+***Math Methods***
+-Math.random() || Math.pow(2,5) || Math.max(10, 20) || etc.
+
+***Comparison and Logical Operators***
+-> == || === equal value and equal type || != || etc.
+->Conditional (Ternary) Operator - variablename = (condition) ? value1:value2 
+
+***Loop For In***
+for (key in object) {
+  // code block to be executed
+}
+for (variable in array) {
+  code
+}
+
+***Loop For Of***
+for (variable of iterable) {
+  // code block to be executed
+}
+
+***Javascript DOM***
+--Changing Content--
+document.getElementById("idname").innerHTML= new content
+
+--Changing TagName Value By Tag Index--
+document.getElementsByTagName("tag")[0].innerHTML= new content
+
+--Changing ClassName Value By class Index--
+document.getElementsByClassName("classname")[0].innerHTML= new content
+
+--Changing HTML Style--
+document.getElementById(id).style.property = new style
+
+--Changing CSS Style--
+document.getElementById("idname").src = "newimage.jpg"
+
+document.getElementById("idname").value = new value; //changing value
+
+document.getElementById("idname").style.color= "red"; //changing font color
+
+document.getElementById("idname").style.fontSize= "40px"; //changing font size
