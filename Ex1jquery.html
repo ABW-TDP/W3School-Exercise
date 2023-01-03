@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exercise 1 Juery</title>
+
+	<script src="jquery-3.6.3.min.js">	</script>
+
+	<script>
+
+	$(document).ready(function(){
+		$("p:first").hide();
+
+		$("#test").hide();
+
+		// $("*").hide();
+	});
+
+	$(document).ready(function(){
+		// $("#p1").click(function(){
+  		// 	$(this).hide();
+		// });
+
+		$("#p1").dblclick(function(){
+  			$(this).hide();
+		});
+
+		$("input").focus(function(){
+    		$(this).css("background-color", "yellow");
+  		});
+
+  		$("input").blur(function(){
+  			$(this).css("background-color", "green");
+  		});
+
+  		 $("#p2").on({
+    		mouseenter: function(){
+      		$(this).css("background-color", "lightgray");
+    		},  
+    		mouseleave: function(){
+      		$(this).css("background-color", "lightblue");
+    		}, 
+    		click: function(){
+      		$(this).css("background-color", "yellow");
+    		}  
+  		});
+
+  		 $("#p3").click(function(){
+  			$(this).hide("slow");
+  			// $(this).show("slow");
+		});
+
+  		 $("#btnToggle").click(function(){
+  		 	$("#p4").toggle();
+  		 });
+
+  		 $("#btn1").click(function(){
+  			$("#div1").fadeIn(1000);
+    		$("#div2").fadeOut("slow");
+    	});
+
+  		 $("#btn2").click(function(){
+  		 	$("#div3").fadeTo("slow", 0.7);
+
+  		 });
+
+  		 $("#btn3").click(function(){
+			$("#div4").fadeToggle(1000);
+		 });
+
+		 $("#slideUp").click(function(){
+		 	$("#panel").slideUp("slow");
+		 });
+
+		 $("#slideDown").click(function(){
+		 	$("#panel1").slideDown("slow");
+		 });
+
+		 $("#slideToggle").click(function(){
+ 			$("#panel2").slideToggle();
+		});
+
+		 $("#btnAni").click(function(){
+		 	$("#div5").animate({
+		 		left: '350px',
+		 		height: '500px',
+		 		opacity: '0.4',
+		 		width : '500px'
+		 	});
+
+		 	$("#div6").animate({fontSize: '3em'}, "slow");
+		 });
+
+
+	});
+
+	</script>
+
+	<style type="text/css">
+		#slideUp, #slideDown,#slideToggle, #panel, #panel1,#panel2{
+			padding: 5px;
+			text-align: center;
+			background-color: #e5eecc;
+			border: solid 1px #c3c3c3;
+		}
+
+		#panel{
+			padding: 50px;
+/*			display: show;*/
+		}
+
+		#panel1, #panel2{
+			padding: 50px;
+			display: none;
+		}
+	</style>
+
+</head>
+<body>
+
+	<p>This is a paragraph.</p>
+
+	<div id="test">This is div</div>
+
+	<p id="p1">This is another paragraph.</p>
+
+	Name: <input type="text" name="fullname"><br><br>
+	Email: <input type="text" name="email">
+
+	<p id="p2">Click or move the mouse pointer over this paragraph.</p><br>
+
+	<p id="p3">This is a paragraph hide slowly.</p><br>
+
+	<button id="btnToggle">Toggle</button><br>
+
+	<p id="p4">This is a paragraph by toggle.</p><br>
+<hr>
+	<button id="btn1">Fade Out</button><br>
+	<div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+	<div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+<hr>
+	<button id="btn2">Click to fade boxes</button><br>
+	<div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div><br>
+<hr>
+	<button id="btn3">Click to fade in/out boxes</button><br>
+	<div id="div4" style="width:80px;height:80px;background-color:yellow;"></div><br>
+<br>
+	<div id="slideUp">Click to slide up panel</div>
+	<div id="panel">Hello world!</div>
+<br>
+	<div id="slideDown">Click to slide down panel</div>
+	<div id="panel1">Hello world!</div>
+<br>
+	<div id="slideToggle">Click to slide the panel down or up</div>
+	<div id="panel2">Hello world!</div>
+<br>
+	<button id="btnAni">Start Animation</button>
+	<div id="div5" style="background:#98bf21;height:100px;width:100px;position:absolute; left: 250px;"></div>
+	<div id="div6" style="background:#98bf21;height:100px;width:200px;position:absolute;">HELLO</div>
+
+</body>
+</html>
