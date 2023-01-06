@@ -3,11 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Exercise 1 Juery</title>
+	<title>Exercise 1 jQuery</title>
 
 	<script src="jquery-3.6.3.min.js">	</script>
 
-	<script>
+	<script type="text/javascript">
 
 	$(document).ready(function(){
 		$("p:first").hide();
@@ -92,13 +92,21 @@
 		 	$("#div6").animate({fontSize: '3em'}, "slow");
 		 });
 
+		 $("#btnStop").click(function(){
+		 	$("#panel3").stop();
+		 });
+
+		$("#downSlide").click(function(){
+		 	$("#panel3").slideDown(5000);
+		 });
+
 
 	});
 
 	</script>
 
 	<style type="text/css">
-		#slideUp, #slideDown,#slideToggle, #panel, #panel1,#panel2{
+		#slideUp, #slideDown,#slideToggle, #downSlide, #panel, #panel1,#panel2,#panel3{
 			padding: 5px;
 			text-align: center;
 			background-color: #e5eecc;
@@ -110,7 +118,7 @@
 /*			display: show;*/
 		}
 
-		#panel1, #panel2{
+		#panel1, #panel2, #panel3{
 			padding: 50px;
 			display: none;
 		}
@@ -156,8 +164,12 @@
 	<div id="panel2">Hello world!</div>
 <br>
 	<button id="btnAni">Start Animation</button>
-	<div id="div5" style="background:#98bf21;height:100px;width:100px;position:absolute; left: 250px;"></div>
-	<div id="div6" style="background:#98bf21;height:100px;width:200px;position:absolute;">HELLO</div>
+	<div id="div5" style="background:#98bf21;height:100px;width:100px;position:relative; left: 250px;"></div>
+	<div id="div6" style="background:#98bf21;height:100px;width:200px;position:relative;">HELLO</div>
+<br><br>
+	<button id="btnStop">Stop Sliding</button><br>
+	<div id="downSlide">Click to slide down last panel</div>
+	<div id="panel3">Hello world!</div>
 
 </body>
 </html>

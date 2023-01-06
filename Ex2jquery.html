@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exercise 2 jQuery</title>
+	<link href="./css/bootstrap.min.css" rel="stylesheet">
+  	<script src="./js/bootstrap.bundle.min.js"></script>
+	<script src="jquery-3.6.3.min.js">	</script>
+	<script type="text/javascript">
+		
+		$(document).ready(function(){
+			$("#div1").text();
+			$("#div2").html();
+			$("#txt1").val();
+			$("#w3s").attr("href");
+
+			$("#div3").click(function(){
+				$("#div3").text("Hello World");
+			})
+
+			$("#txt2").focus(function(){
+				$("#txt2").val("John Doe");
+			});
+
+			$("#img1").click(function(){
+				$("#img1").attr("src", "paris.jpg");
+			});
+
+			$("#btn1").click(function(){
+				$("#myLink").text("Demo");
+				$("#myLink").attr("href", "https://www.w3schools.com/jquery/");
+			});
+
+			$("#p1").append("Yes");
+			$("#p2").prepend("YES!");
+
+			$("#btn2").click(function(){
+				$("#div4").remove();
+			});
+
+			$("#btn3").click(function(){
+				$("#div5").empty();
+			});
+
+			$("#btn4").click(function(){
+				$("#p3,#p4").addClass("important test");
+			});
+
+			$("#btn5").click(function(){
+				$("#p3").removeClass("test");
+			});
+
+			$("#p3, #p4").click(function(){
+ 				$(this).toggleClass("test");
+ 			});
+
+ 			$("#p5").css("background-color","pink");
+ 			$("#p5").css("border", "5px dotted red");
+ 			$("#p5").click(function(){
+ 				var p = $("#p5").css("background-color"); 
+ 				$("#p6").html(p);
+ 			});
+
+ 			$("#p6").css({
+			  "background-color": "green",
+			  "color": "white",
+			  "font-size": "25px",
+			 "padding": "15px"
+			});
+
+			$($("#div6").height(300).width(300)).css("background-color","orange");
+
+			var h = $("#div6").height();
+			var i =	$("#div6").innerHeight();
+			var o =	$("#div6").outerHeight();
+			var t = $("#div6").outerHeight(true);
+			// $("#p7").append(h,"<br>",i,"<br>",o);
+			$("#p7").append(h,"<br>");
+			$("#p7").append(i,"<br>");
+			$("#p7").append(o,"<br>");
+			$("#p7").append(t,"<br>");
+		});
+	</script>
+	<style type="text/css">
+		#img1{
+			width: 200px;
+		}
+
+		.important{
+			font-weight: bold;
+			font-size: xx-large;
+		}
+
+		.test{
+			color: rgba(0, 0, 255, 0.8);
+		}
+
+	</style>
+</head>
+<body>
+	<div id="div1">This is <i>get method</i> by text</div><br>
+	<div id="div2">This is <b>get method</b> by text</div><br>
+	<input type="text" name="txt1" value="Thida" id="txt1"><br>
+	<a href="https://www.w3schools.com/jquery/default.asp" id="w3s"></a><br>
+	<div id="div3">This is jQuery Set div</div><br>
+	<input type="text" name="txt2" value="Phyo" id="txt2"><br>
+	<img src="img1.jpg" alt="img1" id="img1">
+
+	<p><a href="https://www.w3schools.com" id="myLink">W3Schools.com</a></p>
+	<button id="btn1">Change href Value</button>
+
+	<p id="p1">This is jQuery append text.</p>
+	<p id="p2">This is jQuery prepend text.</p>
+
+	<div id="div4" class="bg-warning m-2" style="height:100px;width:300px;border:1px solid black;left: 50px;">This is jQuery remove</div>
+	<button id="btn2" class="bg-secondary m-2">Remove</button>
+	<div id="div5" class="bg-primary m-2" style="height:100px;width:300px;border:1px solid black;left: 50px;">This is jQuery remove</div>
+	<button id="btn3" class="bg-light m-2">Empty</button>
+
+	<p id="p3" class="m-2">This is a paragraph.</p>
+	<p id="p4" class="m-2">This is another paragraph.</p>
+	<button id="btn4" class="bg-info m-2">Add classes to elements</button>
+	<button id="btn5" class="bg-muted m-2">Remove classes to elements</button>
+
+	<p id="p5" class="m-2">This is a jQuery CSS paragraph.</p>
+	<p id="p6" class="m-2"></p>
+
+	<div id="div6"></div>
+	<p id="p7"></p>
+
+</body>
+</html>
